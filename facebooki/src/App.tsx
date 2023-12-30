@@ -14,7 +14,7 @@ function App() {
  React.useEffect(() => {
    const fetchData = async () => {
      try {
-       const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=London&appid={003b6ed39af75dc802cf93b3e5220885}');
+       const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=London&appid={}');
        setWeatherData(response.data);
      } catch (error) {
        console.error("Error fetching weather data", error);
